@@ -1,0 +1,61 @@
+﻿body {}
+ol {list-style-type: none; padding: 0px; margin: 0px;}
+ul {list-style-type: none; padding: 0px; float: left; clear: both;}
+li {float: left; display: inline;}
+.frame {
+	float: left; border: 1px solid #6C7B8B;	
+	width: 540px;
+	padding: 10px;
+}
+ol.horizontal {
+	float: left; clear: both; 
+	padding-left: 30px; 
+	text-align: center;	
+	width: -moz-calc(100% - 30px);     
+    width: -webkit-calc(100% - 30px);
+    width: calc(100% - 30px);
+}
+ol.vertical {float: left; width: 30px; text-align: center;}
+ol.horizontal li {width: 60px; line-height: 30px;}
+ol.vertical li {width: 30px;line-height: 60px;}
+.board {
+	float: left;	
+	width: -moz-calc(60px * 8);     
+    width: -webkit-calc(60px * 8);
+    width: calc(60px * 8);
+}
+.cell {
+	float: left;
+	width: 58px; height: 58px;
+	border: 1px solid #ffffff;
+	cursor: pointer;
+}
+.cell:hover {border: 1px solid #008B45;}
+.message {padding: 0px 20px; line-height: 22px;}
+
+.queen {
+	background-image: url(squeen.png);
+	background-repeat: no-repeat;
+	background-position: 9px 5px;		
+}
+.dark {background-color: #7CCD7C;}
+.light {background-color: #98FB98;}
+.highlight.dark {
+	background-color: #CDBE70;
+	border: 1px solid #CDBE70;
+}
+.highlight.light {
+	background-color: #FFEC8B;
+	border: 1px solid #FFEC8B;
+}
+.highlight.multiple.dark {
+	background-color: #CD8C95;
+	border: 1px solid #CD8C95;
+}
+.highlight.multiple.light {
+	background-color: #FFB6C1;
+	border: 1px solid #FFB6C1;
+}
+.dark.queen , .light.queen {background-color: #FFF;}
+.dark.queen {border: 1px solid #CD8C95;}
+.light.queen {border: 1px solid #FFB6C1;}
